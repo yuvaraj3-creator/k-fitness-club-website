@@ -1,1 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-label="K Fitness Club Unisex logo"><rect width="420" height="150" fill="none"/><g transform="translate(12 15)"><path fill="#f4d000" d="M0 82 58 18h55L67 65l53 55H64L36 91 18 111Z"/><path fill="#fff" d="M58 18h63l-28 30H76Z"/></g><text x="135" y="78" fill="#f4d000" font-family="Arial Black,Arial,sans-serif" font-size="44" font-weight="900" letter-spacing="2">FITNESS</text><text x="137" y="104" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="5">CLUB UNISEX</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760">
+<defs>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd91a"/><stop offset="1" stop-color="#f2b900"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".35"/></filter>
+</defs>
+<g filter="url(#shadow)">
+ <path d="M105 28 Q300 -5 495 28 L520 335 Q515 575 300 735 Q85 575 80 335Z" fill="#3d2b4f" stroke="url(#gold)" stroke-width="24"/>
+ <path d="M300 64 L300 365" stroke="#f3eefa" stroke-width="4" opacity=".15"/>
+ <!-- male outline -->
+ <g fill="none" stroke="#e9dbe8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+  <path d="M156 175 Q145 137 166 113 Q188 92 211 110 Q229 124 223 155 Q219 177 205 190"/>
+  <path d="M160 179 Q132 194 124 229 L110 286 Q108 305 126 309 Q140 310 146 291 L158 256 L151 316 L139 383 Q137 401 156 405 Q174 407 178 389 L187 337 L191 389 Q194 407 212 404 Q230 401 226 383 L218 315 L214 253 L229 292 Q236 309 252 303 Q267 297 259 280 L238 218 Q229 193 205 180"/>
+  <path d="M151 317 Q184 335 218 315"/>
+  <path d="M160 244 Q185 257 212 242"/>
+ </g>
+ <!-- female outline -->
+ <g fill="none" stroke="#e9dbe8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+  <path d="M401 113 Q430 90 451 112 Q468 132 460 164 Q454 185 437 195"/>
+  <path d="M405 185 Q378 194 365 224 L345 273 Q339 289 353 297 Q367 305 377 290 L391 259 L383 317 L371 383 Q369 401 387 405 Q405 407 409 389 L416 340 L421 390 Q424 407 442 404 Q459 401 457 383 L449 317 L446 257 L459 289 Q468 305 483 296 Q497 286 490 271 L470 219 Q458 191 437 184"/>
+  <path d="M390 229 Q420 244 449 229"/>
+  <path d="M386 317 Q418 333 450 316"/>
+ </g>
+ <!-- K -->
+ <path d="M254 91 L315 91 L282 137 L330 137 L395 91 L455 91 L372 184 L455 329 L389 329 L330 228 L305 255 L305 329 L254 329Z" fill="#ffd400"/>
+ <path d="M330 228 L372 184 L455 329 L389 329Z" fill="#f7eef8"/>
+ <path d="M254 91 L305 91 L305 142 L254 142Z" fill="#ffd400"/>
+ <path d="M254 278 L305 278 L305 329 L254 329Z" fill="#ffd400"/>
+ <!-- FITNESS plate -->
+ <path d="M72 338 Q72 313 99 313 H501 Q528 313 528 338 V448 Q528 474 501 474 H99 Q72 474 72 448Z" fill="#3d2b4f" stroke="url(#gold)" stroke-width="18"/>
+ <text x="300" y="414" text-anchor="middle" fill="#f7eef8" font-family="Arial Black,Arial,sans-serif" font-size="64" font-style="italic" font-weight="900" letter-spacing="-2">FITNESS</text>
+ <path d="M155 480 H445 L417 532 Q300 575 183 532Z" fill="#3d2b4f" stroke="url(#gold)" stroke-width="16"/>
+ <text x="300" y="530" text-anchor="middle" fill="#f7eef8" font-family="Arial Black,Arial,sans-serif" font-size="49" font-style="italic" font-weight="900" letter-spacing="3">CLUB</text>
+</g>
+</svg>
