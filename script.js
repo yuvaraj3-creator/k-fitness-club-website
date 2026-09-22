@@ -33,11 +33,16 @@ document.querySelector('#reviewForm')?.addEventListener('submit',e=>{
 });
 
 const photoInput=document.querySelector('#photoInput');
+const showPhoto=(src)=>{let box=document.querySelector('.lightbox');if(!box){box=document.createElement('div');box.className='lightbox';box.innerHTML='<button aria-label="Close">×</button><img alt="Gallery preview">';document.body.appendChild(box);box.addEventListener('click',e=>{if(e.target===box||e.target.tagName==='BUTTON')box.classList.remove('open')})}box.querySelector('img').src=src;box.classList.add('open')};
+document.querySelectorAll('.gallery-grid .photo img').forEach(img=>img.addEventListener('click',()=>showPhoto(img.src)));
+const uploadedGallery=document.querySelector('#uploadedGallery');
+const renderUploaded=()=>{if(!uploadedGallery)return;const photos=JSON.parse(localStorage.getItem('kfitness_photos')||'[]');uploadedGallery.innerHTML=photos.map(src=>'<img src="'+src+'" alt="K Fitness uploaded photo">').join('');uploadedGallery.querySelectorAll('img').forEach(img=>img.addEventListener('click',()=>showPhoto(img.src)))};
+renderUploaded();
 if(photoInput){
  photoInput.addEventListener('change',e=>{
    [...e.target.files].slice(0,8).forEach(file=>{
      const reader=new FileReader();
-     reader.onload=()=>{const photos=JSON.parse(localStorage.getItem('kfitness_photos')||'[]');photos.push(reader.result);localStorage.setItem('kfitness_photos',JSON.stringify(photos.slice(-12)));location.reload()};
+     reader.onload=()=>{const photos=JSON.parse(localStorage.getItem('kfitness_photos')||'[]');photos.push(reader.result);localStorage.setItem('kfitness_photos',JSON.stringify(photos.slice(-12)));renderUploaded()};
      reader.readAsDataURL(file);
    });
  });
